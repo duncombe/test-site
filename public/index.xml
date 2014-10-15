@@ -3,7 +3,7 @@
   <channel>
       <title>Recent Content on IOOS DMAC </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/index.xml</link>
+    <link>http://duncombe.github.io/index.xml</link>
     <language>en-us</language>
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>SOS Guidlines: WSDD &amp; Tests</title>
-      <link>http://localhost:1313/</link>
+      <link>http://duncombe.github.io/</link>
       <pubDate>Mon, 04 Aug 2014 07:56:39 UTC</pubDate>
       
-      <guid>http://localhost:1313/</guid>
+      <guid>http://duncombe.github.io/</guid>
       <description>IOOS SOS Guidelines currently include IOOS SOS Profile 1.0 and IOOS SOS Test Set. The Profile determines the IOOS-compliant implementation of the OGC Standards, and Test Set allows to verify the compliance. The Profile includes a collection of the SOS operation templates, and is described in details in the IOOS SOS Web Service Description Document (WSDD). The IOOS SOS test collection includes both OGC Standard and IOOS Profile compliance tests. 
 &lt;!--more--&gt;
 This WSDD provides a description of a Sensor Observation Service (SOS) that has been developed by U.S. IOOS for deployment by NOAA data providers and IOOS Regional Associations (RAs). This service provides a data consumer with the capability to access ocean observations data products, such as time series and profiles, which have XML-based encodings and included in the SWE Common Data Model.
