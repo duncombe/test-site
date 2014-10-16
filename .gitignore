@@ -28,6 +28,7 @@ $RECYCLE.BIN/
 # Icon must ends with two \r.
 Icon
 
+
 # Thumbnails
 ._*
 
@@ -38,9 +39,15 @@ Icon
 # editor backup files
 *.swp
 
-# Files from Hugo configuration folders
-
 # hide my notes about what I am doing in this folder
 chris-notes.md
 
-
+# Files from Hugo configuration folders 
+# archetypes/**
+# content/**
+# css/**
+# layouts/**
+# static/**
+# temp/**
+# *.toml
+# *.yaml

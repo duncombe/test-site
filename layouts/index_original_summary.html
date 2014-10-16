@@ -4,8 +4,7 @@
 {{ template "chrome/sidebar.html" . }}
 
     <div class="content container">
-
-	<div class="posts">
+<div class="posts">
 
       {{ range .Data.Pages }}
   <div class="post">
@@ -16,24 +15,13 @@
       <h2><a href='{{ .Permalink }}'> {{ .Title }}</a> </h2>
       <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
     </header>
-<!--
-    {{if eq .RelPermalink "/index.html" }} {{.Content}} 
 
-	{{ else }}
-
-		{{ .Summary }} 
-
-		{{end}}
--->
-
-	{{ .Summary }}
-
+    {{ .Summary }}
     <footer>
         <a href='{{ .Permalink }}'><nobr>Read more ></nobr></a>
     </footer>
 
 	</div>
-
   {{ end }}
 </div>
 
