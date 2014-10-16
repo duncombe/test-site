@@ -1,0 +1,25 @@
+baseurl = "http://duncombe.github.io/test-site"
+languageCode = "en-us"
+Title = "IOOS DMAC"
+[params]
+ Description = "Docs, codes, scripts, templates"
+ Copyright = "(C) 2014 U.S. IOOS. Some rights reserved"
+[[menu.main]]
+    name = "IOOS SOS Guidelines (fork)"
+    URL = "https://abirger.github.io/sos-guidelines"
+    weight = -200
+[[menu.main]]
+    name = "IOOS Catalog @ GitHub"
+    URL = "https://github.com/ioos/catalog"
+    weight = -110
+[[menu.main]]
+    name = "IOOS Registry @ GitHub"
+    URL = "https://github.com/ioos/registry"
+    weight = -100
+
+
+
+
+	
+	
+ 

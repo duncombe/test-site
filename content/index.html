@@ -1,0 +1,15 @@
++++
+weight = "-100"
+draft = false
+title = "SOS Guidlines: WSDD & Tests"
+date = 2014-08-04T07:56:39Z
++++
+
+
+IOOS SOS Guidelines currently include IOOS SOS Profile 1.0 and IOOS SOS Test Set. The Profile determines the IOOS-compliant implementation of the OGC Standards, and Test Set allows to verify the compliance. The Profile includes a collection of the SOS operation templates, and is described in details in the IOOS SOS Web Service Description Document (WSDD). The IOOS SOS test collection includes both OGC Standard and IOOS Profile compliance tests. 
+<!--more-->
+This WSDD provides a description of a Sensor Observation Service (SOS) that has been developed by U.S. IOOS for deployment by NOAA data providers and IOOS Regional Associations (RAs). This service provides a data consumer with the capability to access ocean observations data products, such as time series and profiles, which have XML-based encodings and included in the SWE Common Data Model.
+
+The goal of OGC compliance tests is to ensure that the service is to a certain extent compliant with the OGC specifications. The tests are essentially the same as the official OGC CITE test set for SOS 1.0.0; however, some tests were marked out as optional for the current phase of IOOS SOS development, e.g. verification of exception report messages. 
+
+The IOOS SOS Profile tests have originated from the official OGC CITE test set for SOS 1.0.0, and adapted for IOOS-specific requirements. The goal of these tests is to validate that a service response is syntactically and semantically valid. The response is considered syntactically valid if it contains the expected elements and attributes in the order prescribed by the IOOS Profile 1.0 Templates. The response is recognized as semantically valid if its semantic conforms to the IOOS SOS Convention, i.e. the meaning of variables, elements, attributes, etc. matches the CF Conventions v1.6, IOOS SOS WSDD, and IOOS Controlled Vocabularies.

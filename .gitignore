@@ -39,14 +39,6 @@ Icon
 *.swp
 
 # Files from Hugo configuration folders
-archetypes/**
-content/**
-css/**
-layouts/**
-static/**
-temp/**
-*.toml
-*.yaml
 
 # hide my notes about what I am doing in this folder
 chris-notes.md
