@@ -43,6 +43,7 @@ Icon
 chris-notes.md
 
 # Files from Hugo configuration folders 
+public/
 # archetypes/**
 # content/**
 # css/**
