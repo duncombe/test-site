@@ -11,27 +11,24 @@ sos-guidelines
 cd <path-to-site>```
 	3. Populate the content directory with your stuff.
 		4. files must have    a header    
-```+++ 
-draft=true
-title="title"
-date=date
-+++
-```
+	+++ 
+	draft=true
+	title="title"
+	date=date
+	+++
 
 	3. Install the themes
 ```git clone --recursive https://github.com/spf13/hugoThemes themes```
 
 	3. Run Hugo
-```
-hugo server --theme=hyde --buildDrafts
-2 pages created
-0 tags created
-0 categories created
-in 5 ms
-Serving pages from exampleHugoSite/public
-Web Server is available at http://localhost:1313
-Press ctrl+c to stop
-```
+
+	hugo server --theme=hyde --buildDrafts
+	2 pages created
+	0 tags created
+	0 categories created in 5 ms
+	Serving pages from exampleHugoSite/public
+	Web Server is available at http://localhost:1313
+	Press ctrl+c to stop
 
 You can edit your content and run Hugo again, 
 
