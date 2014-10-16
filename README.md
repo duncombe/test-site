@@ -21,7 +21,8 @@ cd <path-to-site>```
 
 	3. Install the themes
 
-```git clone --recursive https://github.com/spf13/hugoThemes themes
+```
+	git clone --recursive https://github.com/spf13/hugoThemes themes
 ```
 
 	3. Run Hugo
