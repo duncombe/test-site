@@ -4,13 +4,16 @@ sos-guidelines
 ## Creating and updating sos-guidelines web-pages
 
 1. Use Hugo 
-  2. Get and install Hugo from
-[gohugo.io](http://gohugo.io/overview/quickstart/), Step 1.   
+  2. Get and install Hugo from [gohugo.io](http://gohugo.io/overview/quickstart/), Step 1.   
   2. Following the quickstart Guide, have hugo create a site    
+
 ```hugo new site <path-to-site>    
-cd <path-to-site>```
+cd <path-to-site>
+```
+
 	3. Populate the content directory with your stuff.
 		4. files must have    a header    
+
 ```
 	+++ 
 	draft=true
@@ -22,8 +25,10 @@ cd <path-to-site>```
 	3. Install the themes
 
 ```
-	git clone --recursive https://github.com/spf13/hugoThemes themes
+git clone --recursive https://github.com/spf13/hugoThemes themes
 ```
+
+
 
 	3. Run Hugo
 
