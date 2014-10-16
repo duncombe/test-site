@@ -16,7 +16,7 @@ draft=true
 title="title"
 date=date
 +++
-```A
+```
 
 	3. Install the themes
 ```git clone --recursive https://github.com/spf13/hugoThemes themes```
@@ -32,10 +32,13 @@ Serving pages from exampleHugoSite/public
 Web Server is available at http://localhost:1313
 Press ctrl+c to stop
 ```
+
 You can edit your content and run Hugo again, 
 
 	3. or use 
+
 ```hugo server --theme=hyde --buildDrafts --watch```
+
 Now you can edit and add more content while Hugo runs and builds
 your site everytime you save your edits.
 
