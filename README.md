@@ -31,17 +31,17 @@ sos-guidelines
 		You can edit and add more content while Hugo runs in the background and rebuilds your site every time you save your edits.
 
 
-Now you are ready to publish your site. Create a bare branch gh-pages at
-the site you want to publish on. 
-One way to do this is to 
+Now you are ready to publish your site. Create a bare branch ```gh-pages``` at
+the site (```github.com/<account-owner>/<repository>```) that you want to publish on (to appear at ```<account-owner>.github.io/<repository>```).  
+One way to do this is to create a bare repository and push it to gh-pages branch at github: 
 
 ```
 git init tmp
 cd tmp
 touch README.md
 git add README.md
-git commit -m "Init"
-git remote add origin ssh://git@github/duncombe/test-site.git
+git commit -m "INITIAL commit on gh-pages branch."
+git remote add origin ssh://git@github.com/<account-owner>/<repository>.git
 git push origin master:gh-pages
 ```
 
@@ -50,36 +50,31 @@ need it any more.
 
 ```
 cd ..
-rm tmp
+rm -rf tmp
 ```
 
-Now put everything in the public directory into a subtree with a new
-branch name, checkout the branch, pull to help avoid problems and push to
-the site gh-pages branch.
+Now put everything in the public directory into a subtree with a new branch name, checkout the branch, pull to help avoid problems, and push to the site gh-pages branch. In the context of the sos-guidelines being published with Hugo (at the remote  `test-site`, say),  
 
 ```
 git subtree split -P public -b new-gh-pages
+```
+`new-gh-pages` must not exist.
 
-
-git push test-site split-gh-pages:gh-pages
+```
+git push test-site new-gh-pages:gh-pages
 ```
 
+Some things you might have to do to get the files onto the gh-pages branch at the repository on github (i.e., to get the push to work):
+While on the branch ``new-gh-pages``
+``` git pull test-site gh-pages ```
+or you might as a last resort force the push possibly messing up a bunch of stuff, but it is only a `gh-pages` branch and hopefully no one (else) will be pulling from or pushing to.
 
- 1123  hugo 
- 1124  ls -altr
- 1126  git branch -d split-gh-pages
- 1127  git branch -D split-gh-pages
- 1128  git subtree split -P public -b split-gh-pages 
- 1129  ls public
- 1130  ls
- 1131  git status
- 1132  vi .gitignore
- 1133  git status
- 1134  git commit -a -m "Change gitignore to ignore public in this branch."
- 1135  git subtree split -P public -b split-gh-pages 
- 1136  ls public/
- 1138  git checkout split-gh-pages 
- 1139  ls -ltr
+`new-gh-pages` is a temporary thing. Usually throw it away when you are done with it. 
+```git branch -d new-gh-pages```
+or (forcefully)
+```git branch -D new-gh-pages```
+
+
 
 ```
 
