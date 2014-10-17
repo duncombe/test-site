@@ -11,24 +11,30 @@ sos-guidelines
 	
 	2. Populate the content directory with your stuff.
 		3. Files must have    a header    
-
+	
             ``` 
-                        +++ 
+            +++ 
 			draft=true
 			title="title"
 			date=date
 			+++ 
-		```
+		```   
 
 	2. Install the themes. 
-    ``` git clone --recursive https://github.com/spf13/hugoThemes themes ```
 
+		```
+		git clone --recursive https://github.com/spf13/hugoThemes themes 
+		```   
+	
 	2. Run Hugo
-	``` hugo server --theme=hyde --buildDrafts
-	```
+
+	`hugo server --theme=hyde --buildDrafts`
+	
+	
 	You can edit your content and run Hugo again, 
 	or use 
-		```hugo server --theme=hyde --buildDrafts --watch```
+	
+		`hugo server --theme=hyde --buildDrafts --watch`
 		
 		You can edit and add more content while Hugo runs in the background and rebuilds your site every time you save your edits.
 
