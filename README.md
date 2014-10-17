@@ -12,11 +12,13 @@ sos-guidelines
 	2. Populate the content directory with your stuff.
 		3. Files must have    a header    
 
-            ``` +++ 
+            ``` 
+                        +++ 
 			draft=true
 			title="title"
 			date=date
-			+++ ```
+			+++ 
+		```
 
 	2. Install the themes. 
     ``` git clone --recursive https://github.com/spf13/hugoThemes themes ```
@@ -32,7 +34,7 @@ sos-guidelines
 
 
 Now you are ready to publish your site. Create a bare branch ```gh-pages``` at
-the site (```github.com/<account-owner>/<repository>```) that you want to publish on (to appear at ```<account-owner>.github.io/<repository>```).  
+the site (`github.com/<account-owner>/<repository>`) that you want to publish on (to appear at ``<account-owner>.github.io/<repository>``.  
 One way to do this is to create a bare repository and push it to gh-pages branch at github: 
 
 ```
